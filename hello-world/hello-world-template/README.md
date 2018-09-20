@@ -1,0 +1,5 @@
+# build
+
+    sbt
+    compile
+    run
