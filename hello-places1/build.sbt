@@ -1,6 +1,6 @@
 // The simplest possible sbt build file is just one line:
 
-scalaVersion := "2.12.6"
+scalaVersion := "2.12.7"
 // That is, to create a valid sbt build, all you've got to do is define the
 // version of Scala you'd like your project to use.
 
@@ -30,6 +30,10 @@ libraryDependencies += "io.argonaut" %% "argonaut" % "6.2.2"
 libraryDependencies += "io.argonaut" %% "argonaut-scalaz" % "6.2.2"
 libraryDependencies += "io.argonaut" %% "argonaut-monocle" % "6.2.2"
 libraryDependencies += "io.argonaut" %% "argonaut-cats" % "6.2.2"
+
+// Testing
+libraryDependencies += "org.scalactic" %% "scalactic" % "3.0.5"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5" % "test"
 
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
 // we're adding the cats dependency to the set of dependencies that sbt will go
