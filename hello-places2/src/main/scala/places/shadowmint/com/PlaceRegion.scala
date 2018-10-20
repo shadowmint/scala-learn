@@ -1,5 +1,5 @@
 package places.shadowmint.com
 
-class PlaceRegion {
-
+case class PlaceRegion(area: PlaceArea, lod: List[PlaceLod], objects: List[PlaceObject]) extends HasDetail {
+  override def detail(): List[PlaceLod] = lod
 }
